@@ -1,0 +1,10 @@
+.centered-text {
+  text-align: center !important;
+  font-size: 20px;
+  padding: 20px;
+  background-color: gray;
+}
+
+a {
+  color: white;
+}

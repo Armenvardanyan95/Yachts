@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+.example-card {
+  width: 400px;
+  height: 100%;
+  margin: 20px auto;
+}
+.example-card p {
+  font-size: 20px !important;
+}
+.example-card mat-card-header {
+  font-size: 30px;
+}

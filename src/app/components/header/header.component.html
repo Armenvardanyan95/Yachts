@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+
+  <ng-container *ngFor="let item of menu">
+    <a *ngIf="item.path" mat-button class="toolbar-link" [routerLink]="item.path">{{ item.name }}</a>
+    <ng-container *ngIf="item.children">
+      <mat-menu #appMenu="matMenu">
+        <a *ngFor="let subItem of item.children" [routerLink]="subItem.path" mat-menu-item>
+          {{ subItem.name }}
+        </a>
+      </mat-menu>
+      <a mat-button [matMenuTriggerFor]="appMenu" class="toolbar-link">
+        {{ item.name }}
+      </a>
+    </ng-container>
+  </ng-container>
+
+</mat-toolbar>

@@ -1,0 +1,38 @@
+<div class="background-div">
+  <div class="floating-form">
+
+    <h1>Ocean Blue Yachting</h1>
+    <h3>Making Yachting Fun Again</h3>
+    <form autocomplete="off">
+
+      <h4>Contact Us</h4>
+      <div>
+        <p>Name <span [style.color]="'red'">*</span></p>
+        <mat-form-field>
+          <input matInput placeholder="First">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Last">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <p>Email  <span [style.color]="'red'">*</span></p>
+        <mat-form-field style="width: 100%">
+          <input matInput placeholder="Email"/>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <p>Comment  <span [style.color]="'red'">*</span></p>
+        <mat-form-field style="width: 100%;">
+          <textarea matInput></textarea>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <button type="submit" mat-raised-button color="primary" style="width: 100%;">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
